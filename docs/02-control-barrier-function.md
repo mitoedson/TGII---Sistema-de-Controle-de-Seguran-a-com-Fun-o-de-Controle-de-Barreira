@@ -36,12 +36,16 @@ ao **Apêndice B**.
 ### O conjunto seguro (2.2)
 
 ```math
-C = \{x \in D \subset \mathbb{R}^n : h(x) \geq 0\} \tag{2.2} \\
+\begin{array}{cl} 
+C = \{x \in D \subset \mathbb{R}^n : h(x) \geq 0\}  \\
 
-\partial C = \{x \in D \subset \mathbb{R}^n : h(x) = 0\}  \\
+\partial C = \{x \in D \subset \mathbb{R}^n : h(x) = 0\} && \text{(2.2)} \\
 
 \text{Int}(C) = \{x \in D \subset \mathbb{R}^n : h(x) > 0\}
+
+\end{array}
 ```
+
 
 $C$ é o conjunto de estados seguros, definido a partir de **uma única** função $h(x)$:
 $C = \text{Int}(C) \cup \partial C$ (identidade topológica padrão de interior/fronteira).
