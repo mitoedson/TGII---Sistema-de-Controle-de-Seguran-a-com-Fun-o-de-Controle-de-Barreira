@@ -100,28 +100,51 @@ interior não há risco imediato de "vazamento" para fora de $C$.
 
 Um controlador $u$ estabiliza (2.1) se satisfaz:
 
-$$\dot V(x) = L_f V(x) + L_g V(x)u \leq -c_V V(x) \tag{2.3}$$
+```math
+\begin{array}{cl} 
+\dot V(x) = L_f V(x) + L_g V(x)u \leq -c_V V(x) &&&& \text{(2.3)}
+\end{array}
+```
 
 > **Definição 2.4 (ESCLF).** $V(x)$ continuamente diferenciável é uma
 > *exponentially stabilizing CLF* se existem $c_1, c_2, c_V > 0$ tais que, para todo $x$:
 >
-> $$c_1\|x\|^2 \leq V(x) \leq c_2\|x\|^2 \tag{2.4}$$
-> $$\inf_{u \in U}\left[L_f V(x) + L_g V(x)u + c_V V(x)\right] \leq 0 \tag{2.5}$$
+> $$c_1\|x\|^2 \leq V(x) \leq c_2\|x\|^2 \text{(2.4)}$$
+> $$\inf_{u \in U}\left[L_f V(x) + L_g V(x)u + c_V V(x)\right] \leq 0 \text{(2.5)}$$
 
 Define-se o conjunto de controladores admissíveis:
 
-$$K_{clf}(x) = \{u \in U : L_f V(x) + L_g V(x)u + c_V V(x) \leq 0\} \tag{2.6}$$
-
+```math
+\begin{array}{cl} 
+K_{clf}(x) = \{u \in U : L_f V(x) + L_g V(x)u + c_V V(x) \leq 0\} &&&& \text{(2.6)}
+\end{array}
+```
 Qualquer $u(x) \in K_{clf}(x)$ localmente Lipschitz garante estabilização exponencial:
 
-$$u(x) \in K_{clf}(x) \Rightarrow \|x(t)\| \leq \sqrt{\tfrac{c_2}{c_1}} e^{-\tfrac{c_V}{2}t}\|x(0)\| \tag{2.7}$$
+```math
+\begin{array}{cl} 
+u(x) \in K_{clf}(x) \Rightarrow \|x(t)\| \leq \sqrt{\tfrac{c_2}{c_1}} e^{-\tfrac{c_V}{2}t}\|x(0)\| &&&& \text{(2.7)}
+\end{array}
+````
 
 ### Controlador QP de Freeman-Kokotovic
 
-$$u^*(x) = \underset{u \in \mathbb{R}^m}{\arg\min} \ \tfrac{1}{2}u^Tu \quad \text{s.t.} \ \psi_0(x) + \psi_1(x)^Tu \leq 0 \tag{2.8}$$
 
-com $\psi_0(x) = L_fV(x)+c_VV(x)$, $\psi_1(x) = L_gV(x)^T$ (2.9). Tem **solução
-fechada**:
+```math
+\begin{array}{cl} 
+u^*(x) = \underset{u \in \mathbb{R}^m}{\arg\min} \ \tfrac{1}{2}u^Tu \quad \text{s.t.} \ \psi_0(x) + \psi_1(x)^Tu \leq 0 &&&& \text{(2.8)}
+\end{array}
+````
+
+```math
+\begin{array}{cl} 
+\text{com } \psi_0(x) = L_fV(x)+c_VV(x), \psi_1(x) = L_gV(x)^T 
+&&&& \text{(2.9)}
+\end{array}
+````
+
+
+Tem **solução fechada**:
 
 $$u^*(x) = \begin{cases} -\dfrac{\psi_0(x)\psi_1(x)}{\psi_1(x)^T\psi_1(x)} & \text{se } \psi_0(x) > 0 \\ 0 & \text{se } \psi_0(x) \leq 0 \end{cases} \tag{2.10}$$
 
