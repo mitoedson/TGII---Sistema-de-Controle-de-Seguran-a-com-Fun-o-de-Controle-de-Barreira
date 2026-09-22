@@ -9,7 +9,9 @@ a CBF e o framework de controle via QP que será estendido nos capítulos seguin
 
 ### O sistema de controle afim (2.1)
 
-$$\dot{x} = f(x) + g(x)u \tag{2.1}$$
+```math
+\dot{x}  = f(x) + g(x)u \tag{2.1} 
+```
 
 - $x \in D \subset \mathbb{R}^n$: estado; $u \in U \subset \mathbb{R}^m$: entrada.
 - $f(x)$, $g(x)$ localmente Lipschitz — garante existência e unicidade local de
@@ -32,9 +34,13 @@ ao **Apêndice B**.
 
 ### O conjunto seguro (2.2)
 
-$$C = \{x \in D \subset \mathbb{R}^n : h(x) \geq 0\}$$
-$$\partial C = \{x \in D \subset \mathbb{R}^n : h(x) = 0\} \tag{2.2}$$
-$$\text{Int}(C) = \{x \in D \subset \mathbb{R}^n : h(x) > 0\}$$
+```math
+C = \{x \in D \subset \mathbb{R}^n : h(x) \geq 0\} \tag{2.2} \\
+
+\partial C = \{x \in D \subset \mathbb{R}^n : h(x) = 0\}  \\
+
+\text{Int}(C) = \{x \in D \subset \mathbb{R}^n : h(x) > 0\}
+```
 
 $C$ é o conjunto de estados seguros, definido a partir de **uma única** função $h(x)$:
 $C = \text{Int}(C) \cup \partial C$ (identidade topológica padrão de interior/fronteira).
