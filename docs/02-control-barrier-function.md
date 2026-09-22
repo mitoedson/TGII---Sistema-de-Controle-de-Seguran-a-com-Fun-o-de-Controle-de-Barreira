@@ -10,7 +10,7 @@ a CBF e o framework de controle via QP que será estendido nos capítulos seguin
 ### O sistema de controle afim (2.1)
 
 ```math
-\begin{array}{cl} \dot{x} = f(x) + g(x)u & \text{(2.1)} 
+\begin{array}{cl} \dot{x} = f(x) + g(x)u &&&& \text{(2.1)} 
 \end{array}
 ```
 
@@ -39,7 +39,7 @@ ao **Apêndice B**.
 \begin{array}{cl} 
 C = \{x \in D \subset \mathbb{R}^n : h(x) \geq 0\}  \\
 
-\partial C = \{x \in D \subset \mathbb{R}^n : h(x) = 0\} && \text{(2.2)} \\
+\partial C = \{x \in D \subset \mathbb{R}^n : h(x) = 0\} &&&& \text{(2.2)} \\
 
 \text{Int}(C) = \{x \in D \subset \mathbb{R}^n : h(x) > 0\}
 
