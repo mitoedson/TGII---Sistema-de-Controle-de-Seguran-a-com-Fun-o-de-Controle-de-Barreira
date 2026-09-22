@@ -10,7 +10,7 @@ a CBF e o framework de controle via QP que será estendido nos capítulos seguin
 ### O sistema de controle afim (2.1)
 
 ```math
-\begin{array}{cl} \dot{x} = f(x) + g(x)u & \tag{2.1} 
+\begin{array}{cl} \dot{x} = f(x) + g(x)u & \text{(2.1)} 
 \end{array}
 ```
 
