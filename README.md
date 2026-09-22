@@ -1,4 +1,4 @@
-# Safe Control Systems with Control Barrier Function — Notas de Estudo
+# Safe Control Systems with Control Barrier Function
 
 Repositório de estudo baseado na tese de doutorado de **Caio Igor Gonçalves Chinelato**,
 *"Safe control systems with control barrier function"*, Escola Politécnica da
