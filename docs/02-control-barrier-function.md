@@ -146,7 +146,13 @@ u^*(x) = \underset{u \in \mathbb{R}^m}{\arg\min} \ \tfrac{1}{2}u^Tu \quad \text{
 
 Tem **solução fechada**:
 
-$$u^*(x) = \begin{cases} -\dfrac{\psi_0(x)\psi_1(x)}{\psi_1(x)^T\psi_1(x)} & \text{se } \psi_0(x) > 0 \\ 0 & \text{se } \psi_0(x) \leq 0 \end{cases} \tag{2.10}$$
+```math
+\text{u*(x) =}
+\begin{array}{cl} 
+\begin{cases} -\dfrac{\psi_0(x)\psi_1(x)}{\psi_1(x)^T\psi_1(x)} & \text{se } \psi_0(x) > 0 \\ 0 & \text{se } \psi_0(x) \leq 0 \end{cases}
+&&&& \text{(2.10)}
+\end{array}
+````
 
 Aplicado experimentalmente, por exemplo, em locomoção bípede robótica (Galloway et
 al., 2015).
