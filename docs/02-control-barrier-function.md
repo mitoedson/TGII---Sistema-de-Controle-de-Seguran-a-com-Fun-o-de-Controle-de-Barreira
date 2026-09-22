@@ -10,8 +10,11 @@ a CBF e o framework de controle via QP que será estendido nos capítulos seguin
 ### O sistema de controle afim (2.1)
 
 ```math
-\dot{x} = f(x) + g(x)u \tag{2.1} 
+\begin{aligned} \dot{x} = f(x) + g(x)u \end{aligned} \tag{2.1}
 ```
+
+
+
 
 - $x \in D \subset \mathbb{R}^n$: estado; $u \in U \subset \mathbb{R}^m$: entrada.
 - $f(x)$, $g(x)$ localmente Lipschitz — garante existência e unicidade local de
