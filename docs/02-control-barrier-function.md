@@ -15,6 +15,9 @@ $$
 \end{aligned} \tag{2.1}
 $$
 
+```math
+\begin{array}{cl} \dot{x} = f(x) + g(x)u & \text{(2.1)} \end{array}
+```
 
 
 
